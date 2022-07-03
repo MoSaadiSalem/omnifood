@@ -1,0 +1,84 @@
+/* FONT SIZE SYSTEM (px)
+        10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+:root {
+  /* 01 fonts systems */
+  /* FONT SIZE SYSTEM (px)*/
+  /* 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+  --default-font-weight: 400;
+  --default-line-height: 1;
+
+  /* 02 colors systems */
+  /* primary color */
+  --primary-clr: #e67e22;
+
+  /* tints: */
+  /* shades: */
+  --primary-tint-clr: #fdf2e9;
+  /* accents: */
+
+  --grey: #555;
+  --dark-grey: #333;
+
+  /* 03 shadows: ; */
+
+  /* 04 border radius */
+
+  /* 05 whitespace */
+  /* space system (px) */
+  /* 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* base font size in root element */
+  /* default value for font size is 16px */
+  /* it is recommended to change it to 10px to ease calculations */
+  /* however, converting from 16 to 10 as percentage is the best practice */
+  font-size: calc((10 / 16) * 100%);
+}
+
+body {
+  color: var(--grey);
+  font-family: sans-serif;
+  font-weight: var(--default-font-weight);
+  line-height: var(--default-line-height);
+}
+
+header.hero-section {
+  /* max-inline-size: 130rem; */
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-tint-clr);
+}
+
+.hero-text-box,
+.hero-img-box {
+  max-inline-size: 65rem;
+}
+
+.heading-primary {
+  color: var(--dark-grey);
+  font-size: 5.2rem;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+
+  margin-block-end: 3.2rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+
+  margin-block-end: 4.8rem;
+}
+
+.hero-img {
+  max-inline-size: 100%;
+}
