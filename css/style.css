@@ -12,16 +12,25 @@
   --primary-clr: #e67e22;
 
   /* tints: */
+  --primary-tint-clr1: #fdf2e9;
+  --primary-tint-clr2: #fae5d3;
+
   /* shades: */
-  --primary-tint-clr: #fdf2e9;
+  --primary-shade-clr1: #cf711f;
+
   /* accents: */
 
   --grey: #555;
   --dark-grey: #333;
 
+  /* font color */
+  --white: #fff;
+  --white-smoke: #f5f5f5;
+
   /* 03 shadows: ; */
 
   /* 04 border radius */
+  --border-radius: 10px;
 
   /* 05 whitespace */
   /* space system (px) */
@@ -44,18 +53,21 @@ html {
 
 body {
   color: var(--grey);
-  font-family: sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: var(--default-font-weight);
   line-height: var(--default-line-height);
 }
 
-header.hero-section {
+.hero-section {
   /* max-inline-size: 130rem; */
   margin-inline: auto;
+  padding-block: 9.6rem;
+  padding-inline: 6.48rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--primary-tint-clr);
+  gap: 9.6rem;
+  background-color: var(--primary-tint-clr1);
 }
 
 .hero-text-box,
@@ -79,6 +91,78 @@ header.hero-section {
   margin-block-end: 4.8rem;
 }
 
+.btn:any-link {
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+
+  display: inline-block;
+  padding-block: 1.6rem;
+  /* block-size: 5.2rem; */
+  /* instead using inline-size */
+  /* to reserve the same width for both buttons */
+  inline-size: 22.5rem;
+  text-align: center;
+  border-radius: var(--border-radius);
+
+  transition: background-color 0.3s;
+}
+
+.btn--full:any-link {
+  color: var(--white);
+  background-color: var(--primary-clr);
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: var(--primary-shade-clr1);
+}
+.btn--outline:any-link {
+  color: #555;
+  background-color: var(--white);
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: var(--primary-tint-clr2);
+  outline: 3px solid var(--white);
+}
+
 .hero-img {
   max-inline-size: 100%;
+}
+
+.margin-right-sm {
+  margin-inline-end: 1.6rem !important;
+}
+
+.delivered-meals {
+  margin-block-start: 8rem;
+  position: relative;
+}
+
+.delivered-meals img {
+  block-size: 4.8rem;
+  inline-size: 4.8rem;
+  border-radius: 50%;
+  border: 3px solid var(--primary-tint-clr1);
+}
+
+.delivered-meals img:not(:nth-last-child(2)) {
+  margin-inline-end: -1.6rem;
+}
+
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+  display: inline-block;
+  position: absolute;
+  inset-block-start: 50%;
+  transform: translate(1rem, -50%);
+}
+
+.delivered-text data,
+.delivered-text span {
+  color: var(--primary-shade-clr1);
+  font-weight: 700;
 }
