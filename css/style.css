@@ -1,16 +1,28 @@
-/* FONT SIZE SYSTEM (px)
-        10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
 :root {
   /* 01 fonts systems */
   /* FONT SIZE SYSTEM (px)*/
   /* 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+  /* line height */
+  --lh-default: 1;
+  --lh-sm: 1.05;
+  --lh-paragraph: 1.6;
+
+  /* font weight */
+  --fw-default: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
 
   /* 02 colors systems */
   /* primary color */
   --primary-clr: #e67e22;
 
   /* shades: */
-  --shade-clr1: #b8651b;
+  --shade-clr1: #cf711f;
+  --shade-clr2: #e67e22;
+  --shade-clr3: #b8651b;
+
   /* tints: */
   --tint-clr1: #fdf2e9;
   --tint-clr2: #f5f5f5;
@@ -50,60 +62,24 @@ html {
 
 body {
   color: var(--grey);
-  font-family: sans-serif;
+  font-family: Rubik, sans-serif;
   font-weight: 400;
   line-height: 1;
 }
 
-.hero-section {
-  display: grid;
-  grid-template-areas:
-    'heading-primary hero-img'
-    'hero-text hero-img';
-  align-items: center;
-  justify-items: center;
-  /* column-gap: 2rem; */
-
-  background-color: var(--tint-clr1);
-  padding-block: 9.6rem;
-}
-
-/* Hero Layout Items */
-.hero-items {
-  max-inline-size: 65rem;
-}
-
-.heading-primary {
-  grid-area: heading-primary;
-}
-
-.hero-text {
-  grid-area: hero-text;
-}
-
-.hero-img {
-  grid-area: hero-img;
-}
-/* End of Hero Layout */
-
+/* ****************************** */
+/* **GENERAL REUSABLE COMPONENTS* */
+/* ****************************** */
 .heading-primary {
   font-size: 5.2rem;
   font-weight: 700;
   line-height: 1.05;
   letter-spacing: -0.5px;
 
-  align-self: end;
+  /* align-self: end; */
 
   color: var(--dark-grey);
   /* margin-block-end: 3.2rem; */
-}
-
-.hero-description {
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 1.6;
-
-  margin-block-end: 4.8rem;
 }
 
 .btn:any-link {
@@ -147,6 +123,104 @@ body {
   margin-inline-end: 1.6rem !important;
 }
 
+/* ****************************** */
+/* *********** HEADER *********** */
+/* ****************************** */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--tint-clr1);
+
+  /* setting the height to setup a sticky position later */
+  block-size: 9.6rem;
+  padding-inline: 4.8rem;
+}
+
+.logo {
+  block-size: 2.2rem;
+}
+
+/* ****************************** */
+/* ********* Navigation ********* */
+/* ****************************** */
+.main-nav-list {
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.main-nav-link:any-link {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+
+  color: var(--dark-grey);
+
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: var(--shade-clr1);
+}
+
+.main-nav-link.nav-cta:any-link {
+  padding-block: 1.2rem;
+  padding-inline: 2.4rem;
+  border-radius: var(--border-radius);
+  color: var(--white);
+  background-color: var(--shade-clr2);
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: var(--shade-clr1);
+}
+/* ****************************** */
+/* ******** HERO SECTION ******** */
+/* ****************************** */
+.hero-section {
+  display: grid;
+  grid-template-columns: 3.2rem 1fr 1fr 3.2rem;
+  grid-template-areas:
+    'start heading-primary hero-img end'
+    'start hero-text hero-img end';
+  align-items: center;
+  justify-items: center;
+  column-gap: 4.8rem;
+
+  background-color: var(--tint-clr1);
+  padding-block: 4.8rem 9.6rem;
+}
+
+/* Hero Layout Items */
+.hero-items {
+  max-inline-size: 65rem;
+}
+
+.heading-primary {
+  grid-area: heading-primary;
+}
+
+.hero-text {
+  grid-area: hero-text;
+}
+
+.hero-img {
+  grid-area: hero-img;
+}
+/* End of Hero Layout */
+
+.hero-description {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.6;
+
+  margin-block-end: 4.8rem;
+}
+
 .delivered-meals {
   margin-block-start: 8rem;
   /* position: relative; */
@@ -178,7 +252,7 @@ body {
 
 .delivered-text data,
 .delivered-text span {
-  color: var(--shade-clr1);
+  color: var(--shade-clr2);
   font-weight: 700;
 }
 
