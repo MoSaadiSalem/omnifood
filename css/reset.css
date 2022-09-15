@@ -1,0 +1,20 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* base font size in root element */
+  /* default value for font size is 16px */
+  /* it is recommended to change it to 10px to ease calculations */
+  /* however, converting from 16 to 10 as percentage is the best practice */
+  font-size: calc((10 / 16) * 100%);
+}
+
+body {
+  color: var(--grey);
+  font-family: Rubik, sans-serif;
+  font-weight: 400;
+  line-height: 1;
+}

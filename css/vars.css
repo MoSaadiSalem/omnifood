@@ -1,0 +1,52 @@
+:root {
+  /* 01 fonts systems */
+  /* FONT SIZE SYSTEM (px)*/
+  /* 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+  /* line height */
+  --lh-default: 1;
+  --lh-sm: 1.05;
+  --lh-paragraph: 1.6;
+
+  /* font weight */
+  --fw-default: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+
+  /* 02 colors systems */
+  /* primary color */
+  --primary-clr: #e67e22;
+
+  /* shades: */
+  --shade-clr1: #cf711f;
+  --shade-clr2: #e67e22;
+  --shade-clr3: #b8651b;
+
+  /* tints: */
+  --tint-clr1: #fdf2e9;
+  --tint-clr2: #f8d8bd;
+  --tint-clr3: #fae5d3;
+  /* accents: */
+
+  --light-grey: #ddd;
+  --grey: #555;
+  --dark-grey: #333;
+
+  /* font color */
+  --white: #fff;
+  --white-smoke: #f5f5f5;
+
+  /* 03 shadows: ; */
+
+  /* 04 border radius */
+  --border-radius: 9px;
+
+  /* 05 whitespace */
+  /* space system (px) */
+  /* 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+  /* 06 letter-spacing */
+  --letter-spacing1: 0.5px;
+  --letter-spacing2: 0.75px;
+}

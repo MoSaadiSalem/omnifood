@@ -1,0 +1,119 @@
+/* ************************************** */
+/* **GENERAL REUSABLE LAYOUT COMPONENTS** */
+/* ************************************** */
+.container {
+  max-inline-size: 120rem;
+  padding-block: 0;
+  padding-inline: 3.2rem;
+  margin-block: 0;
+  margin-inline: auto;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--center-v {
+  align-items: center;
+}
+
+.h-flex {
+  display: flex;
+  gap: 9.6rem;
+}
+
+.v-flex {
+  display: flex;
+  gap: 9.6rem;
+  flex-direction: column;
+}
+/* ******************************* */
+/* **GENERAL REUSABLE COMPONENTS** */
+/* ******************************* */
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: var(--dark-grey);
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  /* align-self: end; */
+  /* margin-block-end: 3.2rem; */
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-block-end: 9.6rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-block-end: 3.2rem;
+}
+
+.heading-alt {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--shade-clr1);
+  text-transform: uppercase;
+  margin-block-end: 1.6rem;
+  letter-spacing: var(--letter-spacing2);
+}
+
+.btn:any-link {
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+
+  display: inline-block;
+  padding-block: 1.6rem;
+  /* block-size: 5.2rem; */
+  /* instead using inline-size */
+  /* to reserve the same width for both buttons */
+  inline-size: 22.5rem;
+  text-align: center;
+  border-radius: var(--border-radius);
+
+  transition: background-color 0.3s;
+}
+
+.btn--full:any-link {
+  color: var(--white);
+  background-color: var(--primary-clr);
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: var(--shade-clr1);
+}
+.btn--outline:any-link {
+  color: #555;
+  background-color: var(--white);
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  color: var(--dark-grey);
+  background-color: var(--tint-clr2);
+  outline: 3px solid var(--white);
+}
+
+/* .margin-right-sm {
+  margin-inline-end: 1.6rem !important;
+} */

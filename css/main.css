@@ -1,0 +1,220 @@
+/* ****************************** */
+/* *********** HEADER *********** */
+/* ****************************** */
+header.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--tint-clr1);
+
+  /* setting the height to setup a sticky position later */
+  block-size: 9.6rem;
+  padding-inline: 4.8rem;
+}
+
+.logo {
+  block-size: 2.2rem;
+}
+
+/* ****************************** */
+/* ********* Navigation ********* */
+/* ****************************** */
+.main-nav-list {
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.main-nav-link:any-link {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+
+  color: var(--dark-grey);
+
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: var(--shade-clr1);
+}
+
+.main-nav-link.nav-cta:any-link {
+  padding-block: 1.2rem;
+  padding-inline: 2.4rem;
+  border-radius: var(--border-radius);
+  color: var(--white);
+  background-color: var(--shade-clr2);
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: var(--shade-clr1);
+}
+
+/* ****************************** */
+/* ******** HERO SECTION ******** */
+/* ****************************** */
+.section-hero {
+  display: grid;
+  /* grid-template-columns: auto 1fr 1fr auto; */
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    /* 'start heading-primary hero-img end' */
+    /* 'start hero-text hero-img end'; */
+    'heading-primary hero-img'
+    'hero-text hero-img';
+  align-items: center;
+  justify-items: end;
+  column-gap: 9.6rem;
+  padding-inline: 4.8rem;
+
+  background-color: var(--tint-clr1);
+  padding-block: 4.8rem 9.6rem;
+}
+
+/* Hero Layout Items */
+.hero-items {
+  max-inline-size: 60rem;
+}
+
+.heading-primary {
+  grid-area: heading-primary;
+}
+
+.hero-text {
+  grid-area: hero-text;
+}
+
+.btn-group {
+  display: flex;
+  gap: 1.6rem;
+  flex-wrap: wrap;
+}
+
+.hero-description {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.6;
+
+  margin-block-end: 4.8rem;
+}
+
+.delivered-meals {
+  margin-block-start: 8rem;
+  /* position: relative; */
+  /* justify-self: start; */
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.delivered-meals img {
+  block-size: 4.8rem;
+  inline-size: 4.8rem;
+  border-radius: 50%;
+  border: 3px solid var(--tint-clr1);
+}
+
+.delivered-meals img:not(:nth-last-child(2)) {
+  margin-inline-end: -2.6rem;
+}
+
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+  /* display: inline-block;
+  position: absolute;
+  inset-block-start: 50%;
+  transform: translate(1rem, -50%); */
+}
+
+.delivered-text data,
+.delivered-text span {
+  color: var(--shade-clr2);
+  font-weight: 700;
+}
+
+.hero-img {
+  grid-area: hero-img;
+  inline-size: 100%;
+  justify-self: start;
+  /* justify-self: end; */
+}
+/* End of Hero Layout */
+
+/* ****************************** */
+/* **** HOW IT WORKS SECTION **** */
+/* ****************************** */
+.section-how {
+  padding-block: 9.6rem;
+  margin-inline: auto;
+}
+
+.section-how > header {
+  margin-inline: auto;
+}
+
+.section-how > ol {
+  list-style: none;
+}
+
+.step-how {
+  counter-increment: steps;
+  /* to reset counter when body reload */
+  counter-reset: body;
+}
+
+.step-how:not(:last-child) {
+  margin-block-end: 9.6rem;
+}
+
+.step-number::before {
+  content: counter(steps, decimal-leading-zero);
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: var(--light-grey);
+  margin-block-end: 1.2rem;
+}
+
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.step-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-img-container::before,
+.step-img-container::after {
+  content: '';
+  border-radius: 50%;
+  position: absolute;
+}
+
+.step-img-container::before {
+  background-color: var(--tint-clr1);
+  inline-size: 25%;
+  padding-block-end: 25%;
+  z-index: -2;
+}
+
+.step-img-container::after {
+  background-color: var(--tint-clr3);
+  inline-size: 20%;
+  padding-block-end: 20%;
+  z-index: -1;
+}
+
+.step-img {
+  inline-size: 35%;
+}
+
+.left-cell {
+  grid-area: 1/1/2/2;
+}
