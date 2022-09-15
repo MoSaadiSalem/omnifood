@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,11 +13,15 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="css/style.css" />
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="css/vars.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <title>Omnifood</title>
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <img class="logo" src="img/omnifood-logo.png" alt="Omnifood logo" />
       <nav class="main-nav">
         <ul class="main-nav-list">
@@ -29,7 +34,7 @@
       </nav>
     </header>
     <main>
-      <article class="hero-section">
+      <section class="section-hero">
         <h1 class="heading-primary hero-items">
           A healthy meal delivered to your door, every single day
         </h1>
@@ -64,14 +69,96 @@
             </figcaption>
           </figure>
         </section>
-        <figure class="hero-img hero-items">
-          <img
-            src="img/hero.png"
-            class="hero-img"
-            alt="A collection of three photos for a woman is enjoying food, meals are in storage container, and food bowls on a table"
-          />
-        </figure>
-      </article>
+        <img
+          src="img/hero.png"
+          class="hero-img hero-items"
+          alt="A collection of three photos for a woman is enjoying food, meals are in storage container, and food bowls on a table"
+        />
+      </section>
+      <section class="section-how">
+        <header class="container">
+          <p class="heading-alt">How it works</p>
+          <h2 class="heading-secondary">
+            Your daily dose of health in 3 simple steps
+          </h2>
+        </header>
+        <ol class="">
+          <li class="step-how container">
+            <article class="step-01 grid grid--2-cols grid--center-v">
+              <div class="step-text step-number">
+                <h3 class="heading-tertiary">
+                  Tell us what you like (and what not)
+                </h3>
+                <p class="step-description">
+                  Never again waste time thinking about what to eat! Omnifood AI
+                  will create a 100% personalized weekly meal plan just for you.
+                  It makes sure you get all the nutrients and vitamins you need,
+                  no matter what diet you follow!
+                </p>
+              </div>
+              <aside
+                aria-label="First step illustration"
+                class="step-img-container"
+              >
+                <img
+                  src="img/app/app-screen-1.png"
+                  class="step-img"
+                  alt="iPhone app
+            preferences selection screen"
+                />
+              </aside>
+            </article>
+          </li>
+          <li class="step-how container">
+            <article class="step-02 grid grid--2-cols grid--center-v">
+              <div class="step-text step-number">
+                <h3 class="heading-tertiary">Approve your weekly meal plan</h3>
+                <p class="step-description">
+                  Once per week, approve the meal plan generated for you by
+                  Omnifood AI. You can change ingredients, swap entire meals, or
+                  even add your own recipes.
+                </p>
+              </div>
+              <aside
+                aria-label="Second step illustration"
+                class="step-img-container left-cell"
+              >
+                <img
+                  src="img/app/app-screen-2.png"
+                  class="step-img"
+                  alt="iPhone app
+                meal approving plan screen"
+                />
+              </aside>
+            </article>
+          </li>
+          <li class="step-how container">
+            <article class="step-03 grid grid--2-cols grid--center-v">
+              <div class="step-text step-number">
+                <h3 class="heading-tertiary">
+                  Receive meals at convenient time
+                </h3>
+                <p class="step-description">
+                  Best chefs in town will cook your selected meal every day, and
+                  we will deliver it to your door whenever works best for you.
+                  You can change delivery schedule and address daily!
+                </p>
+              </div>
+              <aside
+                aria-label="Third step illustration"
+                class="step-img-container"
+              >
+                <img
+                  src="img/app/app-screen-3.png"
+                  class="step-img"
+                  alt="iPhone app
+        delivery screen"
+                />
+              </aside>
+            </article>
+          </li>
+        </ol>
+      </section>
     </main>
   </body>
 </html>
