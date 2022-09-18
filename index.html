@@ -50,7 +50,7 @@
             >
             <a href="#" class="btn btn--outline">Learn more &darr;</a>
           </p>
-          <figure class="delivered-meals">
+          <aside aria-label="Some customers photos" class="delivered-meals">
             <img src="img/customers/customer-1.jpg" alt="customer photo" /><img
               src="img/customers/customer-2.jpg"
               alt="customer photo"
@@ -63,17 +63,32 @@
             /><img src="img/customers/customer-5.jpg" alt="customer photo" />
             <img src="img/customers/customer-6.jpg" alt="customer photo" />
 
-            <figcaption class="delivered-text">
+            <p class="delivered-text">
               <data value="250000">250,000</data><span>+</span> meals delivered
               last year!
-            </figcaption>
-          </figure>
+            </p>
+          </aside>
         </section>
         <img
           src="img/hero.png"
           class="hero-img hero-items"
           alt="A collection of three photos for a woman is enjoying food, meals are in storage container, and food bowls on a table"
         />
+      </section>
+      <section class="section-featured container">
+        <h2 class="heading-featured-in">As featured in</h2>
+        <aside class="logos" aria-label="Featured Logos">
+          <img src="img/logos/techcrunch.png" alt="Techcurnch logo" /><img
+            src="img/logos/business-insider.png"
+            alt="Business Insider logo"
+          /><img
+            src="img/logos/the-new-york-times.png"
+            alt="The New York Times logo"
+          /><img src="img/logos/forbes.png" alt="" /><img
+            src="img/logos/usa-today.png"
+            alt="USA Today logo"
+          />
+        </aside>
       </section>
       <section class="section-how">
         <header class="container">
@@ -159,6 +174,131 @@
           </li>
         </ol>
       </section>
+      <section class="section-meals container">
+        <header>
+          <p class="heading-alt">Meals</p>
+          <h2 class="heading-secondary">
+            Omnifood AI chooses from <data value="5000">5,000</data>+ recipes
+          </h2>
+        </header>
+        <section aria-label="Meals cards" class="cards grid grid--3-cols">
+          <article class="meal">
+            <figure>
+              <img
+                src="img/meals/meal-1.jpg"
+                class="meal-img"
+                alt="Japanese Gyozas"
+              />
+              <figcaption>
+                <p class="meal-tags">
+                  <span class="tag tag--vegetarian">Vegetarian</span>
+                </p>
+                <h3 class="meal-title">Japanese Gyozas</h3>
+              </figcaption>
+            </figure>
+            <ul class="meal-attributes">
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="flame"></ion-icon>
+                <span><data value="650">650</data> calories</span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="restaurant"></ion-icon>
+                <span>NutriaScore&reg; <data value="74">74</data></span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="star-outline"></ion-icon
+                ><span
+                  ><data value="4.9">4.9</data> rating (<data value="537"
+                    >537</data
+                  >)</span
+                >
+              </li>
+            </ul>
+          </article>
+          <article class="meal">
+            <figure>
+              <img
+                src="img/meals/meal-2.jpg"
+                class="meal-img"
+                alt="Avocado Salads"
+              />
+              <figcaption>
+                <p class="meal-tags">
+                  <span class="tag tag--vegan">Vegan</span
+                  ><span class="tag tag--paleo">Paleo</span>
+                </p>
+                <h3 class="meal-title">Avocado Salad</h3>
+              </figcaption>
+            </figure>
+            <ul class="meal-attributes">
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="flame"></ion-icon>
+                <span><data value="400">400</data> calories</span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="restaurant"></ion-icon>
+                <span>NutriaScore&reg; <data value="92">92</data></span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="star-outline"></ion-icon
+                ><span
+                  ><data value="4.8">4.8</data> rating (<data value="441"
+                    >441</data
+                  >)</span
+                >
+              </li>
+            </ul>
+          </article>
+          <article class="diet">
+            <h3 class="diet-list-title">Works with any diet</h3>
+            <ul class="diet-list">
+              <li class="list-item">
+                <ion-icon class="check-mark" name="checkmark"></ion-icon>
+                <span>Vegetarian</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="check-mark" name="checkmark"></ion-icon>
+                <span>Vegan</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="check-mark" name="checkmark"></ion-icon>
+                <span>Pescatarian</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="check-mark" name="checkmark"></ion-icon>
+                <span>Gluten-free</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="check-mark" name="checkmark"></ion-icon>
+                <span>Lactose-free</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="check-mark" name="checkmark"></ion-icon>
+                <span>Keto</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="check-mark" name="checkmark"></ion-icon>
+                <span>Paleo</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="check-mark" name="checkmark"></ion-icon>
+                <span>Low FODMAP</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="check-mark" name="checkmark"></ion-icon>
+                <span>Kid-friendly</span>
+              </li>
+            </ul>
+          </article>
+        </section>
+        <footer>
+          <a href="#" class="link link--recipes all-recipes"
+            >See all recipes &rarr;</a
+          >
+        </footer>
+      </section>
     </main>
+    <!-- Icons -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   </body>
 </html>
