@@ -29,9 +29,14 @@
   --tint-clr3: #fae5d3;
   /* accents: */
 
-  --light-grey: #ddd;
+  --lighter-grey: #ddd;
+  --light-grey: #888;
   --grey: #555;
   --dark-grey: #333;
+
+  --vegetarian-clr: #51cf66;
+  --vegan-clr: #94d82d;
+  --paleo-clr: #ffd43b;
 
   /* font color */
   --white: #fff;
@@ -40,7 +45,8 @@
   /* 03 shadows: ; */
 
   /* 04 border radius */
-  --border-radius: 9px;
+  --border-radius-default: 9px;
+  --border-radius-medium: 11px;
 
   /* 05 whitespace */
   /* space system (px) */

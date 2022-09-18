@@ -88,12 +88,13 @@
   /* to reserve the same width for both buttons */
   inline-size: 22.5rem;
   text-align: center;
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius-default);
 
   transition: background-color 0.3s;
 }
 
-.btn--full:any-link {
+.btn--full:link,
+.btn--full:visited {
   color: var(--white);
   background-color: var(--primary-clr);
 }
@@ -103,7 +104,7 @@
   background-color: var(--shade-clr1);
 }
 .btn--outline:any-link {
-  color: #555;
+  color: var(--grey);
   background-color: var(--white);
 }
 
@@ -117,3 +118,20 @@
 /* .margin-right-sm {
   margin-inline-end: 1.6rem !important;
 } */
+
+.link:link,
+.link:visited {
+  color: var(--primary-clr);
+  text-decoration: none;
+  border-block-end: 1px solid currentColor;
+  padding-block-end: 2px;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: var(--shade-clr1);
+  text-decoration: none;
+  border-block-end: 1px solid transparent;
+  padding-block-end: 2px;
+}
