@@ -29,8 +29,9 @@
   --tint-clr3: #fae5d3;
   /* accents: */
 
-  --lighter-grey: #ddd;
-  --light-grey: #888;
+  --lightest-grey: #ddd;
+  --lighter-grey: #888;
+  --light-grey: #6f6f6f;
   --grey: #555;
   --dark-grey: #333;
 
