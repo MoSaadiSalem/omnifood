@@ -15,6 +15,10 @@
   row-gap: 9.6rem;
 }
 
+/* .grid:not(:last-child) {
+  margin-block-end: 9.6rem;
+} */
+
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -23,8 +27,8 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
-.grid--center-v {
-  align-items: center;
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .h-flex {
@@ -134,4 +138,24 @@
   text-decoration: none;
   border-block-end: 1px solid transparent;
   padding-block-end: 2px;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.list-icon {
+  /* inline-size: 2.4rem; */
+  /* block-size: 2.4rem; */
+  font-size: 2.4rem;
+  color: var(--primary-clr);
 }

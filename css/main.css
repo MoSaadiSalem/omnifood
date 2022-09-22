@@ -316,24 +316,9 @@ header.main-header {
   margin-block-end: 3.2rem;
 }
 
-.meal-attributes,
-.diet-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
 .meal-attributes {
   margin-inline-start: 4.8rem;
   margin-block-end: 4.8rem;
-}
-
-.meal-attribute,
-.list-item {
-  display: flex;
-  align-items: center;
-  gap: 1.6rem;
 }
 
 .meal-attribute span,
@@ -343,14 +328,6 @@ header.main-header {
 
 .meal-attribute data {
   font-weight: 500;
-}
-
-.meal-icon,
-.check-mark {
-  /* inline-size: 2.4rem; */
-  /* block-size: 2.4rem; */
-  font-size: 2.4rem;
-  color: var(--primary-clr);
 }
 
 .all-recipes {
@@ -428,4 +405,128 @@ header.main-header {
 
 .gallery img:hover {
   transform: scale(1.1);
+}
+
+/* ****************************** */
+/* **** PRICING SECTION **** */
+/* ****************************** */
+.section-pricing {
+  padding-block: 9.6rem;
+  margin-inline: auto;
+}
+
+.price-plan {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--border-radius-medium);
+  inline-size: 75%;
+}
+
+.starter-plan {
+  justify-self: end;
+  /* border: 2px solid var(--tint-clr1); */
+  outline: 0.2rem solid var(--tint-clr1);
+  padding-block: 4.6rem;
+  padding-inline: 4.6rem;
+}
+
+.complete-plan {
+  background-color: var(--tint-clr1);
+  padding-block: 4.8rem;
+  padding-inline: 4.8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.complete-plan::after {
+  content: 'Best Value';
+  position: absolute;
+  text-transform: uppercase;
+  inset-block-start: 5%;
+  inset-inline-end: -20%;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--dark-grey);
+  background-color: var(--paleo-clr);
+  padding-block: 0.8rem;
+  padding-inline: 8rem;
+  transform: rotate(45deg);
+}
+
+.plan-header {
+  text-align: center;
+  margin-block-end: 4.8rem;
+}
+.plan-name {
+  color: var(--shade-clr1);
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+
+  margin-block-end: 3.2rem;
+}
+
+.plan-price {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: var(--dark-grey);
+  margin-block-end: 1.6rem;
+}
+
+.plan-price data[value='USD'] {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-inline-end: 0.8rem;
+}
+
+.plan-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: var(--light-grey);
+}
+
+.plan-sign-up {
+  align-self: center;
+  margin-block-start: 4.8rem;
+}
+
+.pricing-details {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+  margin-block-start: 4.8rem;
+  margin-block-end: 9.6rem;
+}
+
+.price-features {
+  grid-column: 1/-1;
+}
+
+.price-features ul {
+  list-style: none;
+}
+
+.feature-icon {
+  color: var(--primary-clr);
+  /* block-size: 2.4rem;
+  inline-size: 2.4rem; */
+  font-size: 3.2rem;
+  background-color: var(--tint-clr1);
+  padding-block: 1.6rem;
+  padding-inline: 1.6rem;
+  border-radius: 50%;
+  margin-block-end: 3.2rem;
+}
+
+.feature-title {
+  font-size: 2.4rem;
+  color: var(--dark-grey);
+  font-weight: 700;
+  margin-block-end: 1.6rem;
+}
+
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
 }
