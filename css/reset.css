@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem var(--shade-trans-clr2);
+}
+
 html {
   /* base font size in root element */
   /* default value for font size is 16px */

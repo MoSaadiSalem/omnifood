@@ -80,6 +80,7 @@
   letter-spacing: var(--letter-spacing2);
 }
 
+.btn,
 .btn:any-link {
   font-size: 2rem;
   font-weight: 600;
@@ -92,6 +93,9 @@
   /* to reserve the same width for both buttons */
   inline-size: 22.5rem;
   text-align: center;
+
+  border: none;
+  cursor: pointer;
   border-radius: var(--border-radius-default);
 
   transition: background-color 0.3s;
@@ -122,6 +126,16 @@
 /* .margin-right-sm {
   margin-inline-end: 1.6rem !important;
 } */
+
+.btn--form {
+  color: var(--tint-clr3);
+  background-color: var(--shade-clr4);
+}
+
+.btn--form:hover {
+  color: var(--grey);
+  background-color: var(--white-smoke);
+}
 
 .link:link,
 .link:visited {

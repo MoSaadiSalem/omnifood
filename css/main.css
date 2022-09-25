@@ -46,7 +46,7 @@ header.main-header {
   padding-inline: 2.4rem;
   border-radius: var(--border-radius-default);
   color: var(--white);
-  background-color: var(--shade-clr2);
+  background-color: var(--primary-clr);
 }
 
 .main-nav-link.nav-cta:hover,
@@ -133,7 +133,7 @@ header.main-header {
 
 .delivered-text data,
 .delivered-text span {
-  color: var(--shade-clr2);
+  color: var(--primary-clr);
   font-weight: 700;
 }
 
@@ -529,4 +529,97 @@ header.main-header {
 .feature-text {
   font-size: 1.8rem;
   line-height: 1.8;
+}
+
+/* ******************************* */
+/* ********* CTA SECTION ********* */
+/* ******************************* */
+.section-cta {
+  margin-block-end: 9.6rem;
+  margin-inline: auto;
+}
+
+.section-cta *:focus {
+  box-shadow: 0 0 0 0.8rem var(--tint-trans-clr2);
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: var(--primary-clr);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: var(--border-radius-medium);
+  background-image: linear-gradient(var(--primary-clr), var(--primary-clr));
+
+  padding-inline: 0;
+  inline-size: 113.6rem;
+  overflow: hidden;
+}
+
+.cta-text-box {
+  color: var(--shade-clr4);
+  margin-block: 4.8rem 6.4rem;
+  margin-inline: 6.4rem;
+}
+
+.cta-text-box header {
+  margin-block-end: 4.8rem;
+}
+
+.cta-text-box header h2 {
+  margin-block-end: 3.2rem;
+  color: inherit;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      var(--shade-trans-clr2),
+      var(--primary-trans-clr)
+    ),
+    url('../img/eating.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-block-end: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+  inline-size: 100%;
+  font-size: 1.8rem;
+  padding-block: 1.2rem;
+  padding-inline: 1.2rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: var(--tint-clr1);
+  border-radius: var(--border-radius-default);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.cta-form button {
+  inline-size: 100%;
+  padding-block: 1.25rem;
+  align-self: end;
 }

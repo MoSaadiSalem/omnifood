@@ -17,15 +17,18 @@
   /* 02 colors systems */
   /* primary color */
   --primary-clr: #e67e22;
+  --primary-trans-clr: #e67d2259;
 
   /* shades: */
   --shade-clr1: #cf711f;
-  --shade-clr2: #e67e22;
+  --shade-trans-clr2: #e67d2259;
   --shade-clr3: #b8651b;
+  --shade-clr4: #45260a;
 
   /* tints: */
   --tint-clr1: #fdf2e9;
   --tint-clr2: #f8d8bd;
+  --tint-trans-clr2: #f8d8bdd9;
   --tint-clr3: #fae5d3;
   /* accents: */
 
