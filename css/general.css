@@ -31,6 +31,10 @@
   grid-template-columns: repeat(4, 1fr);
 }
 
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
 .h-flex {
   display: flex;
   gap: 9.6rem;
