@@ -1,0 +1,322 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1 em = 16px */
+
+/* Break points */
+/*
+  - 1390
+*/
+
+/* ************************************* */
+/* *** BELOW 1344 (Smaller desktops) *** */
+/* ************************************* */
+
+@media (max-width: 84em) {
+  .hero-items {
+    max-width: 55.2rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+
+  .section-testimonials {
+    grid-template-columns: 70fr 30fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* **************************************** */
+/* **** BELOW 1200 (Tablets landscape) **** */
+/* **************************************** */
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .heading-primary {
+    font-size: 3.6rem;
+  }
+
+  .heading-secondary {
+    font-size: 2.4rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2rem;
+  }
+
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+
+  .section-hero {
+    column-gap: 4.8rem;
+  }
+
+  .testimonials {
+    padding-inline: 3.2rem;
+  }
+
+  .cta {
+    max-inline-size: 113.6rem;
+  }
+
+  .cta-text-box {
+    margin-block: 3.2rem 4.8rem;
+    margin-inline: 4.8rem;
+  }
+}
+
+/* ******************************* */
+/* ***** BELOW 944 (tablets)****** */
+/* ******************************* */
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .section-hero {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'heading-primary'
+      'hero-text'
+      'hero-img';
+    justify-items: center;
+    gap: 3.2rem;
+
+    text-align: center;
+  }
+
+  .btn-group {
+    justify-content: space-around;
+  }
+  .hero-img {
+    inline-size: 60%;
+    justify-self: center;
+  }
+
+  .logos img {
+    block-size: 2.4rem;
+  }
+
+  .step-number::before {
+    font-size: 7.4rem;
+  }
+
+  .meal-title {
+    margin-block-start: 2.4rem;
+    margin-inline: 3.2rem;
+  }
+
+  .meal-attributes {
+    margin-inline: 3.2rem;
+    margin-block-end: 3.2rem;
+  }
+
+  .section-testimonials {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 3.2rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+    padding-inline: 3.2rem;
+    margin-inline: 9.6rem;
+  }
+
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .btn--form {
+    margin-block-start: 1.2rem;
+  }
+
+  /* mobile navigation */
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .main-header {
+    position: relative;
+  }
+
+  .main-nav-list {
+    position: absolute;
+    background-color: #ffffffe8;
+    inset-block-start: 0;
+    inset-inline-end: 0;
+    inline-size: 100%;
+    block-size: 100vh;
+    flex-direction: column;
+    gap: 4.8rem;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    transform: translateX(100%);
+
+    /* Hide it from screen readers */
+    visibility: hidden;
+    opacity: 0;
+    /* Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+  }
+
+  .nav-open {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+
+    transform: translateX(0);
+  }
+
+  .main-nav-link:any-link {
+    font-size: 3rem;
+  }
+
+  .nav-open .icon-mobile-nav[name='close'] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name='menu'] {
+    display: none;
+  }
+
+  .price-plan {
+    inline-size: 100%;
+  }
+}
+
+/* ******************************* */
+/* ***** BELOW 704 (mobiles)****** */
+/* ******************************* */
+
+@media (max-width: 44em) {
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .diet {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-links {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 1/-1;
+    grid-row: 1;
+  }
+
+  .heading-secondary {
+    margin-block-end: 4.8rem;
+  }
+}
+
+/* ******************************* */
+/* ***** BELOW 544 (mobiles)****** */
+/* ******************************* */
+
+@media (max-width: 34em) {
+  .grid {
+    grid-gap: 4.8rem;
+  }
+
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .delivered-meals {
+    margin-block-start: 3.2rem;
+  }
+
+  .section-hero {
+    padding-inline: 2.4rem;
+    padding-block: 2.4rem 6.4rem;
+    gap: 6.4rem;
+  }
+
+  .hero-img {
+    inline-size: 80%;
+  }
+
+  .logos img {
+    block-size: 1.2rem;
+  }
+
+  /* .left-cell {
+    grid-area: auto;
+  } */
+
+  .step-how article {
+    grid-gap: 1.6rem;
+  }
+
+  .step-how article aside {
+    grid-row: 1;
+  }
+
+  .step-img-container::before {
+    inline-size: 60%;
+    padding-block-end: 60%;
+  }
+
+  .step-img-container::after {
+    inline-size: 45%;
+    padding-block-end: 45%;
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 4.8rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+    padding-inline: 3.2rem;
+    margin-inline: 9.6rem;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-img-box {
+    block-size: 64rem;
+    grid-row: 1;
+  }
+
+  .footer-links {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
