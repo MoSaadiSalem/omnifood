@@ -4,7 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description"
+    content="Omnifood is an AI-powered food subscription that will make you eat healthy again, 365 days per year. It's tailored to your personal tastes and nutritional needs.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="img/favicon.webp" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.webp">
+  <link rel="manifest" href="manifest.json">
 
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,30 +24,32 @@
   <link rel="stylesheet" href="css/general.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/queries.css">
-  <title>Omnifood</title>
+
+  <script defer src="js/script.js"></script>
+  <title>Omnifood &mdash; Never cook again!</title>
 </head>
 
 <body>
   <header class="main-header">
     <a href="#">
-      <img class="logo" src="img/omnifood-logo.png" alt="Omnifood logo">
+      <img class="logo" src="img/omnifood-logo.webp" alt="Omnifood logo">
     </a>
     <nav aria-label="Main navigator" class="main-nav">
       <ul class="main-nav-list">
         <li>
-          <a class="main-nav-link" href="#">How it works</a>
+          <a class="main-nav-link" href="#how">How it works</a>
         </li>
         <li>
-          <a class="main-nav-link" href="#">Meals</a>
+          <a class="main-nav-link" href="#meals">Meals</a>
         </li>
         <li>
-          <a class="main-nav-link" href="#">Testimonials</a>
+          <a class="main-nav-link" href="#testimonials">Testimonials</a>
         </li>
         <li>
-          <a class="main-nav-link" href="#">Pricing</a>
+          <a class="main-nav-link" href="#pricing">Pricing</a>
         </li>
         <li>
-          <a class="main-nav-link nav-cta" href="#">Try for free</a>
+          <a class="main-nav-link nav-cta" href="#cta">Try for free</a>
         </li>
       </ul>
     </nav>
@@ -62,15 +70,15 @@
           needs.
         </h2>
         <p class="btn-group">
-          <a href="#" class="btn btn--full margin-right-sm">Start eating well</a>
-          <a href="#" class="btn btn--outline">Learn more &darr;</a>
+          <a href="#cta" class="btn btn--full margin-right-sm">Start eating well</a>
+          <a href="#how" class="btn btn--outline">Learn more &darr;</a>
         </p>
         <aside aria-label="Some customers photos" class="delivered-meals">
-          <img src="img/customers/customer-1.jpg" alt="customer photo"><img src="img/customers/customer-2.jpg"
-            alt="customer photo"><img src="img/customers/customer-3.jpg" alt="customer photo"><img
-            src="img/customers/customer-4.jpg" alt="customer photo"><img src="img/customers/customer-5.jpg"
+          <img src="img/customers/customer-1.webp" alt="customer photo"><img src="img/customers/customer-2.webp"
+            alt="customer photo"><img src="img/customers/customer-3.webp" alt="customer photo"><img
+            src="img/customers/customer-4.webp" alt="customer photo"><img src="img/customers/customer-5.webp"
             alt="customer photo">
-          <img src="img/customers/customer-6.jpg" alt="customer photo">
+          <img src="img/customers/customer-6.webp" alt="customer photo">
 
           <p class="delivered-text">
             <data value="250000">250,000</data><span>+</span> meals delivered
@@ -78,18 +86,22 @@
           </p>
         </aside>
       </section>
-      <img src="img/hero.png" class="hero-img hero-items"
-        alt="A collection of three photos for a woman is enjoying food, meals are in storage container, and food bowls on a table">
+      <picture>
+        <source srcset="img/hero.webp" type="image/webp">
+        <source srcset="img/png/hero.png" type="image/png">
+        <img src="img/png/hero.png" class="hero-img hero-items"
+          alt="A collection of three photos for a woman is enjoying food, meals are in storage container, and food bowls on a table">
+      </picture>
     </section>
     <section class="section-featured container">
       <h2 class="heading-featured-in">As featured in</h2>
       <aside class="logos" aria-label="Featured Logos">
-        <img src="img/logos/techcrunch.png" alt="Techcurnch logo"><img src="img/logos/business-insider.png"
-          alt="Business Insider logo"><img src="img/logos/the-new-york-times.png" alt="The New York Times logo"><img
-          src="img/logos/forbes.png" alt=""><img src="img/logos/usa-today.png" alt="USA Today logo">
+        <img src="img/logos/techcrunch.webp" alt="Techcurnch logo"><img src="img/logos/business-insider.webp"
+          alt="Business Insider logo"><img src="img/logos/the-new-york-times.webp" alt="The New York Times logo"><img
+          src="img/logos/forbes.webp" alt=""><img src="img/logos/usa-today.webp" alt="USA Today logo">
       </aside>
     </section>
-    <section class="section-how">
+    <section class="section-how" id="how">
       <header class="container">
         <p class="heading-alt">How it works</p>
         <h2 class="heading-secondary">
@@ -111,7 +123,7 @@
               </p>
             </div>
             <aside aria-label="First step illustration" class="step-img-container">
-              <img src="img/app/app-screen-1.png" class="step-img" alt="iPhone app
+              <img src="img/app/app-screen-1.webp" class="step-img" alt="iPhone app
             preferences selection screen">
             </aside>
           </article>
@@ -127,7 +139,7 @@
               </p>
             </div>
             <aside aria-label="Second step illustration" class="step-img-container left-cell">
-              <img src="img/app/app-screen-2.png" class="step-img" alt="iPhone app
+              <img src="img/app/app-screen-2.webp" class="step-img" alt="iPhone app
                 meal approving plan screen">
             </aside>
           </article>
@@ -145,14 +157,14 @@
               </p>
             </div>
             <aside aria-label="Third step illustration" class="step-img-container">
-              <img src="img/app/app-screen-3.png" class="step-img" alt="iPhone app
+              <img src="img/app/app-screen-3.webp" class="step-img" alt="iPhone app
         delivery screen">
             </aside>
           </article>
         </li>
       </ol>
     </section>
-    <section class="section-meals container">
+    <section class="section-meals container" id="meals">
       <header>
         <p class="heading-alt">Meals</p>
         <h2 class="heading-secondary">
@@ -162,7 +174,7 @@
       <section aria-label="Meals cards" class="cards grid grid--3-cols">
         <article class="meal">
           <figure>
-            <img src="img/meals/meal-1.jpg" class="meal-img" alt="Japanese Gyozas">
+            <img src="img/meals/meal-1.webp" class="meal-img" alt="Japanese Gyozas">
             <figcaption>
               <p class="meal-tags">
                 <span class="tag tag--vegetarian">Vegetarian</span>
@@ -187,7 +199,7 @@
         </article>
         <article class="meal">
           <figure>
-            <img src="img/meals/meal-2.jpg" class="meal-img" alt="Avocado Salads">
+            <img src="img/meals/meal-2.webp" class="meal-img" alt="Avocado Salads">
             <figcaption>
               <p class="meal-tags">
                 <span class="tag tag--vegan">Vegan</span><span class="tag tag--paleo">Paleo</span>
@@ -256,7 +268,7 @@
         <a href="#" class="link link--recipes all-recipes">See all recipes &rarr;</a>
       </footer>
     </section>
-    <section aria-label="Customers testimonials" class="section-testimonials">
+    <section aria-label="Customers testimonials" class="section-testimonials" id="testimonials">
       <article class="testimonials">
         <header>
           <p class="heading-alt">Testimonial</p>
@@ -265,7 +277,7 @@
           </h2>
         </header>
         <figure class="testimonial">
-          <img class="testimonial-img" src="img/customers/dave.jpg" alt="Photo of customer Dave Bryson">
+          <img class="testimonial-img" src="img/customers/dave.webp" alt="Photo of customer Dave Bryson">
           <blockquote>
             <p class="testimonial-text">
               Inexpensive, healthy and great-tasting meals, without even
@@ -277,7 +289,7 @@
           </figcaption>
         </figure>
         <figure class="testimonial">
-          <img class="testimonial-img" src="img/customers/ben.jpg" alt="Photo of customer Ben Hadley">
+          <img class="testimonial-img" src="img/customers/ben.webp" alt="Photo of customer Ben Hadley">
           <blockquote>
             <p class="testimonial-text">
               The AI algorithm is crazy good, it chooses the right meals for
@@ -287,7 +299,7 @@
           <figcaption class="testimonial-name">&mdash; Ben Hadley</figcaption>
         </figure>
         <figure class="testimonial">
-          <img class="testimonial-img" src="img/customers/steve.jpg" alt="Photo of customer Steve Miller">
+          <img class="testimonial-img" src="img/customers/steve.webp" alt="Photo of customer Steve Miller">
           <blockquote>
             <p class="testimonial-text">
               Omnifood is a life saver! I just started a company, so there's
@@ -299,7 +311,7 @@
           </figcaption>
         </figure>
         <figure class="testimonial">
-          <img class="testimonial-img" src="img/customers/hannah.jpg" alt="Photo of customer Hannah Smith">
+          <img class="testimonial-img" src="img/customers/hannah.webp" alt="Photo of customer Hannah Smith">
           <blockquote>
             <p class="testimonial-text">
               I got Omnifood for the whole family, and it frees up so much
@@ -312,45 +324,69 @@
         </figure>
       </article>
       <aside aria-label="food gallery" class="gallery">
-        <figure>
-          <img src="img/gallery/gallery-1.jpg" alt="a member of photo gallery for Omnifood">
-        </figure>
-        <figure>
-          <img src="img/gallery/gallery-2.jpg" alt="a member of photo gallery for Omnifood">
-        </figure>
-        <figure>
-          <img src="img/gallery/gallery-3.jpg" alt="a member of photo gallery for Omnifood">
-        </figure>
-        <figure>
-          <img src="img/gallery/gallery-4.jpg" alt="a member of photo gallery for Omnifood">
-        </figure>
-        <figure>
-          <img src="img/gallery/gallery-5.jpg" alt="a member of photo gallery for Omnifood">
-        </figure>
-        <figure>
-          <img src="img/gallery/gallery-6.jpg" alt="a member of photo gallery for Omnifood">
-        </figure>
-        <figure>
-          <img src="img/gallery/gallery-7.jpg" alt="a member of photo gallery for Omnifood">
-        </figure>
-        <figure>
-          <img src="img/gallery/gallery-8.jpg" alt="a member of photo gallery for Omnifood">
-        </figure>
-        <figure>
-          <img src="img/gallery/gallery-9.jpg" alt="a member of photo gallery for Omnifood">
-        </figure>
-        <figure>
-          <img src="img/gallery/gallery-10.jpg" alt="a member of photo gallery for Omnifood">
-        </figure>
-        <figure>
-          <img src="img/gallery/gallery-11.jpg" alt="a member of photo gallery for Omnifood">
-        </figure>
-        <figure>
-          <img src="img/gallery/gallery-12.jpg" alt="a member of photo gallery for Omnifood">
-        </figure>
+        <picture>
+          <source srcset="img/gallery/gallery-1.webp" type="image/webp">
+          <source srcset="img/gallery/jpg/gallery-1.jpg" type="image/jpg">
+          <img src="img/gallery/jpg/gallery-1.jpg" alt="a member of photo gallery for Omnifood">
+        </picture>
+        <picture>
+          <source srcset="img/gallery/gallery-2.webp" type="image/webp">
+          <source srcset="img/gallery/jpg/gallery-2.jpg" type="image/jpg">
+          <img src="img/gallery/jpg/gallery-2.jpg" alt="a member of photo gallery for Omnifood">
+        </picture>
+        <picture>
+          <source srcset="img/gallery/gallery-3.webp" type="image/webp">
+          <source srcset="img/gallery/jpg/gallery-3.jpg" type="image/jpg">
+          <img src="img/gallery/jpg/gallery-3.jpg" alt="a member of photo gallery for Omnifood">
+        </picture>
+        <picture>
+          <source srcset="img/gallery/gallery-4.webp" type="image/webp">
+          <source srcset="img/gallery/jpg/gallery-4.jpg" type="image/jpg">
+          <img src="img/gallery/jpg/gallery-4.jpg" alt="a member of photo gallery for Omnifood">
+        </picture>
+        <picture>
+          <source srcset="img/gallery/gallery-5.webp" type="image/webp">
+          <source srcset="img/gallery/jpg/gallery-5.jpg" type="image/jpg">
+          <img src="img/gallery/jpg/gallery-5.jpg" alt="a member of photo gallery for Omnifood">
+        </picture>
+        <picture>
+          <source srcset="img/gallery/gallery-6.webp" type="image/webp">
+          <source srcset="img/gallery/jpg/gallery-6.jpg" type="image/jpg">
+          <img src="img/gallery/jpg/gallery-6.jpg" alt="a member of photo gallery for Omnifood">
+        </picture>
+        <picture>
+          <source srcset="img/gallery/gallery-7.webp" type="image/webp">
+          <source srcset="img/gallery/jpg/gallery-7.jpg" type="image/jpg">
+          <img src="img/gallery/jpg/gallery-7.jpg" alt="a member of photo gallery for Omnifood">
+        </picture>
+        <picture>
+          <source srcset="img/gallery/gallery-8.webp" type="image/webp">
+          <source srcset="img/gallery/jpg/gallery-8.jpg" type="image/jpg">
+          <img src="img/gallery/jpg/gallery-8.jpg" alt="a member of photo gallery for Omnifood">
+        </picture>
+        <picture>
+          <source srcset="img/gallery/gallery-9.webp" type="image/webp">
+          <source srcset="img/gallery/jpg/gallery-9.jpg" type="image/jpg">
+          <img src="img/gallery/jpg/gallery-9.jpg" alt="a member of photo gallery for Omnifood">
+        </picture>
+        <picture>
+          <source srcset="img/gallery/gallery-10.webp" type="image/webp">
+          <source srcset="img/gallery/jpg/gallery-10.jpg" type="image/jpg">
+          <img src="img/gallery/jpg/gallery-10.jpg" alt="a member of photo gallery for Omnifood">
+        </picture>
+        <picture>
+          <source srcset="img/gallery/gallery-11.webp" type="image/webp">
+          <source srcset="img/gallery/jpg/gallery-11.jpg" type="image/jpg">
+          <img src="img/gallery/jpg/gallery-11.jpg" alt="a member of photo gallery for Omnifood">
+        </picture>
+        <picture>
+          <source srcset="img/gallery/gallery-12.webp" type="image/webp">
+          <source srcset="img/gallery/jpg/gallery-12.jpg" type="image/jpg">
+          <img src="img/gallery/jpg/gallery-12.jpg" alt="a member of photo gallery for Omnifood">
+        </picture>
       </aside>
     </section>
-    <section class="section-pricing">
+    <section class="section-pricing" id="pricing">
       <header class="container">
         <p class="heading-alt">Pricing</p>
         <h2 class="heading-secondary">
@@ -472,7 +508,7 @@
         </ul>
       </article>
     </section>
-    <section aria-label="Call to action section aligner container" class="section-cta container">
+    <section aria-label="Call to action section aligner container" class="section-cta container" id="cta">
       <section class="cta" aria-label="Call to action section elements">
         <article class="cta-text-box">
           <header>
@@ -516,7 +552,7 @@
     class="section-footer container grid grid--3-cols grid--footer">
     <aside aria-label="Omnifood logo" class="logo-col">
       <a href="#" class="footer-logo">
-        <img class="logo" src="img/omnifood-logo.png" alt="Omnifood logo">
+        <img class="logo" src="img/omnifood-logo.webp" alt="Omnifood logo">
       </a>
       <ul class="social-links">
         <li>
@@ -536,7 +572,8 @@
         </li>
       </ul>
       <p class="copyright">
-        <small>copyright &copy; 2027 Omnifood, Inc. All rights reserved.
+        <small>copyright &copy; <data class="copyright-year" value="2027">2027</data> Omnifood, Inc. All rights
+          reserved.
         </small>
       </p>
     </aside>
