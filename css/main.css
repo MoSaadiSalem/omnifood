@@ -71,6 +71,22 @@ header.main-header {
   display: none;
 }
 
+/* sticky nav */
+.sticky .main-header {
+  position: fixed;
+  inset-block: 0;
+  inset-inline: 0;
+  inline-size: 100%;
+  background-color: var(--white-trans-smoke);
+  block-size: 8rem;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+  z-index: 100;
+}
+
+.sticky .section-hero {
+  margin-block-start: 9.6rem;
+}
+
 /* ****************************** */
 /* ******** HERO SECTION ******** */
 /* ****************************** */
@@ -416,6 +432,10 @@ header.main-header {
   overflow: hidden;
 }
 
+.gallery picture {
+  overflow: hidden;
+}
+
 .gallery img {
   inline-size: 100%;
   transition: all 0.3s;
@@ -461,13 +481,13 @@ header.main-header {
   position: absolute;
   text-transform: uppercase;
   inset-block-start: 5%;
-  inset-inline-end: -20%;
+  inset-inline-end: -30%;
   font-size: 1.4rem;
   font-weight: 700;
   color: var(--dark-grey);
   background-color: var(--paleo-clr);
   padding-block: 0.8rem;
-  padding-inline: 8rem;
+  padding-inline: 12rem;
   transform: rotate(45deg);
 }
 
@@ -604,7 +624,7 @@ header.main-header {
       var(--shade-trans-clr2),
       var(--primary-trans-clr)
     ),
-    url('../img/eating.jpg');
+    url('../img/eating.webp');
   background-size: cover;
   background-position: center;
 }
