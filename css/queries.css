@@ -33,11 +33,6 @@
   .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  /* .complete-plan::after {
-    inset-block-start: 6%;
-    inset-inline-end: -18%;
-  } */
 }
 
 /* **************************************** */
@@ -77,11 +72,6 @@
   .testimonials {
     padding-inline: 3.2rem;
   }
-
-  /* .complete-plan::after {
-    inset-block-start: 7.5%;
-    inset-inline-end: -22%;
-  } */
 
   .cta {
     max-inline-size: 113.6rem;
@@ -150,12 +140,6 @@
     grid-template-columns: repeat(6, 1fr);
     padding-inline: 3.2rem;
     margin-inline: 9.6rem;
-  }
-
-  .complete-plan::after {
-    inset-block-start: 8%;
-    inset-inline-end: -20%;
-    font-size: 1.2rem;
   }
 
   .cta {
@@ -240,13 +224,6 @@
     justify-self: center;
   }
 
-  .complete-plan::after {
-    inset-block-start: 5%;
-    inset-inline-end: -30%;
-    padding-block: 0.6rem;
-    padding-inline: 12rem;
-  }
-
   .grid--footer {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -328,11 +305,6 @@
     gap: 1.2rem;
     padding-inline: 3.2rem;
     margin-inline: 9.6rem;
-  }
-
-  .complete-plan::after {
-    inset-block-start: 5%;
-    inset-inline-end: -20%;
   }
 
   .cta {

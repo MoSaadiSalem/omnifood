@@ -480,8 +480,8 @@ header.main-header {
   content: 'Best Value';
   position: absolute;
   text-transform: uppercase;
-  inset-block-start: 5%;
-  inset-inline-end: -30%;
+  inset-block-start: 2.5em;
+  inset-inline-end: -8.5em;
   font-size: 1.4rem;
   font-weight: 700;
   color: var(--dark-grey);
